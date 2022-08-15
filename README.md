@@ -13,3 +13,5 @@ sudo localectl set-locale LANG=de_DE.UTF-8
 ```
 ```
 cp alacritt.yml ~/.config/
+```
+Sollten Kontextmenüs durchichtig sein, kopieren sie sich die `picom.conf`von `/etc/xdg/picom.conf`nach `~/.config`und entfernen sie aus der letzten Sektion `tooltip`, `popup_menu` und `dropdown_menu`.
