@@ -11,3 +11,5 @@ sudo nano /etc/locale.gen
 sudo locale-gen
 sudo localectl set-locale LANG=de_DE.UTF-8
 ```
+```
+cp alacritt.yml ~/.config/
