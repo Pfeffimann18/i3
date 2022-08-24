@@ -25,9 +25,6 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
-
 # Programme starten
 bindsym $mod+t exec alacritty
 bindsym $mod+e exec nautilus 
@@ -57,14 +54,6 @@ bindsym $mod+v split v
 
 # Vollbild-Modus
 bindsym $mod+f fullscreen toggle
-
-# Layout ändern (gestapelt, tabbed, geteilt)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+r layout toggle split
-
-# fliegende Fenster ändern
-bindsym $mod+Shift+space floating toggle
 
 # Hauptfenster fokusieren
 bindsym $mod+a focus parent
@@ -110,7 +99,7 @@ bindsym $mod+Shift+c reload
 # i3 neustarten
 bindsym $mod+Shift+r restart
 # i3 verlassen (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Möchten sie i3 verlassen?' -B 'Ja, i3 beenden.' 'i3-msg exit'"
 
 # Bumblebee Statusleiste
 bar {
@@ -147,8 +136,8 @@ bindsym $mod+l exec i3lock
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # Programme den Desktops zuweisen
-for_window [class="sakura"] move to workspace $ws2
-for_window [class="chromium"] move to workspace $ws3
+for_window [class="alacritty"] move to workspace $ws2
+for_window [class="firefox"] move to workspace $ws3
 for_window [class="geany"] move to workspace $ws4
 for_window [class="libreoffice"] move to workspace $ws5
 for_window [class="virt-manager"] move to workspace $ws6
