@@ -53,6 +53,7 @@ bindsym $mod+v split v
 > neues Fenster horizontal/vertikal öffnen
 
 </br> </br> 
+
 ```
 bar {
 	status_command /usr/share/bumblebee-status/bumblebee-status \
@@ -78,7 +79,7 @@ colors {
 </br>
 
 ### Fensteroptionen für Ränder und Tarnsparenz.
-```
+ ```
 window:
   padding:
     x: 10
