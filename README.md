@@ -73,3 +73,93 @@ colors {
 }
 ```
 > Bumblebee Statusleiste
+
+## 3. Alacritty
+</br>
+
+### Fensteroptionen für Ränder und Tarnsparenz.
+```
+window:
+  padding:
+    x: 10
+    y: 10
+
+  opacity: 0.75
+```
+</br>
+
+### Fontart, Größe und Abstand einstellen.
+```
+font:
+  normal:
+    family: SF Mono
+    style: Regular
+
+  bold:
+    family: SF Mono
+    style: Bold
+
+  italic:
+    family: SF Mono
+    style: Italic
+
+  bold_italic:
+    family: SF Mono
+    style: Bold Italic
+
+  size: 7
+
+  offset:
+    x: 0
+    y: 2
+```
+</br>
+
+### Purify Farbthema
+```
+colors:
+ selection:
+  text:       '0xFAFAFA'
+  background: '0x252834'
+
+ # Normal colors
+  primary:
+  background: '0x313440'
+  foreground: '0xFAFAFA'
+ normal:
+  black:   '0x282C34'
+  red:     '0xFF6059'
+  green:   '0x5FFF87'
+  yellow:  '0xFFFF87'
+  blue:    '0x5FAFFF'
+  magenta: '0xAF87FF'
+  cyan:    '0x5FAFFF'
+  white:   '0xFAFAFA'
+
+ # Bright colors
+ bright:
+  black:   '0x282C34'
+  red:     '0xFF6059'
+  green:   '0x5FFF87'
+  yellow:  '0xFFFF87'
+  blue:    '0x5FAFFF'
+  magenta: '0xAF87FF'
+  cyan:    '0x5FAFFF'
+  white:   '0xFAFAFA'
+```
+</br>
+
+### blinkender Cursorbalken
+```
+cursor:
+  style:
+    shape: Beam
+    blinking: Always
+```
+</br>
+
+### Shortcuts für Kopieren und Einfügen
+```
+ - { key: V,              mods: Control,						  action: Paste            }
+ - { key: C,              mods: Control|Shift,                    action: Copy             }
+```
