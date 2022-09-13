@@ -145,3 +145,6 @@ for_window [class="virt-manager"] move to workspace $ws6
 # Abstand
 gaps outer 7
 gaps inner 7
+
+# Titelleiste emtfernen
+for_window [class="^"]
