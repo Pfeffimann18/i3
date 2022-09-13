@@ -78,7 +78,7 @@ colors {
 
 ## 3. Alacritty
 </br>
-<a href="https://imgbox.com/NFMhI65i" target="_blank"><img src="https://images2.imgbox.com/10/29/NFMhI65i_o.png" alt="image host"/></a>
+<a href="http://imgbox.com/ETr4pWG1" target="_blank"><img src="https://images2.imgbox.com/e2/3a/ETr4pWG1_o.png" alt="imgbox"/></a>g
 
 ### Fensteroptionen für Ränder und Tarnsparenz.
  ```
