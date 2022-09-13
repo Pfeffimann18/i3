@@ -1,5 +1,6 @@
-# i3
-i3 Fenstermanager installieren und anpassen.
+# i3 - fenstermanager
+<a href="http://imgbox.com/NNbEuXKZ" target="_blank"><img src="https://images2.imgbox.com/ad/13/NNbEuXKZ_o.png" alt="imgbox"/></a>
+
 ## 1. Installation der benötigten Pakete
 ```
 sudo pacman -S i3 i3-gaps i3lock xorg lxappearance nitrogen nautilus firefox dmenu ttf-font-awesome polkit alsa-utils pulseaudio-alsa pulseaudio speedtest-cli alacritty
@@ -77,6 +78,7 @@ colors {
 
 ## 3. Alacritty
 </br>
+<a href="https://imgbox.com/NFMhI65i" target="_blank"><img src="https://images2.imgbox.com/10/29/NFMhI65i_o.png" alt="image host"/></a>
 
 ### Fensteroptionen für Ränder und Tarnsparenz.
  ```
