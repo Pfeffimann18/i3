@@ -1,7 +1,5 @@
 # i3 - Fenstermanager
-<p align="center">
-  <img src="https://images2.imgbox.com/ad/13/NNbEuXKZ_o.png" width="1920">
-</p>
+![alt text](https://images2.imgbox.com/ad/13/NNbEuXKZ_o.png "Logo Title Text 1")
 
 ## 1. Installation der benötigten Pakete
 ```
