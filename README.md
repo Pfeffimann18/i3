@@ -79,7 +79,6 @@ colors {
 > Bumblebee Statusleiste
 
 ## 3. Alacritty
-</br>
 <p align="center">
   <img src="https://images2.imgbox.com/e2/3a/ETr4pWG1_o.png" width="1920">
 </p>
