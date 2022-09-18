@@ -80,8 +80,9 @@ colors {
 
 ## 3. Alacritty
 </br>
-<a href="http://imgbox.com/ETr4pWG1" target="_blank"><img src="https://images2.imgbox.com/e2/3a/ETr4pWG1_o.png" alt="imgbox"/></a>g
-
+<p align="center">
+  <img src="https://images2.imgbox.com/e2/3a/ETr4pWG1_o.png" width="1920">
+</p>
 ### Fensteroptionen für Ränder und Tarnsparenz.
  ```
 window:
