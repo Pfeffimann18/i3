@@ -1,5 +1,7 @@
 # i3 - fenstermanager
-<a href="http://imgbox.com/NNbEuXKZ" target="_blank"><img src="https://images2.imgbox.com/ad/13/NNbEuXKZ_o.png" alt="imgbox"/></a>
+<p align="center">
+  <img src="https://images2.imgbox.com/ad/13/NNbEuXKZ_o.png" width="1024px">
+</p>
 
 ## 1. Installation der benötigten Pakete
 ```
