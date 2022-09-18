@@ -82,6 +82,7 @@ colors {
 <p align="center">
   <img src="https://images2.imgbox.com/e2/3a/ETr4pWG1_o.png" width="1920">
 </p>
+
 ### Fensteroptionen für Ränder und Tarnsparenz.
  ```
 window:
@@ -166,5 +167,5 @@ cursor:
 ### Shortcuts für Kopieren und Einfügen
 ```
  - { key: V,              mods: Control,						  action: Paste            }
- - { key: C,              mods: Control|Shift,                    action: Copy             }
+ - { key: C,              mods: Control|Shift,        action: Copy             }
 ```
