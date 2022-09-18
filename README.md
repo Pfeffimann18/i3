@@ -1,4 +1,4 @@
-# i3 - fenstermanager
+# i3 - Fenstermanager
 <p align="center">
   <img src="https://images2.imgbox.com/ad/13/NNbEuXKZ_o.png" width="1920">
 </p>
