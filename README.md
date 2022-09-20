@@ -1,5 +1,5 @@
 # i3 - Fenstermanager
-![alt text](https://images2.imgbox.com/ad/13/NNbEuXKZ_o.png "Logo Title Text 1")
+<a href="https://imgbox.com/1zM31UnY" target="_blank"><img src="https://images2.imgbox.com/7d/5c/1zM31UnY_o.png" alt="image host"/></a>
 
 ## 1. Installation der benötigten Pakete
 ```
@@ -77,9 +77,7 @@ colors {
 > Bumblebee Statusleiste
 
 ## 3. Alacritty
-<p align="center">
-  <img src="https://images2.imgbox.com/e2/3a/ETr4pWG1_o.png" width="1920">
-</p>
+<a href="https://imgbox.com/7LSlF4Cj" target="_blank"><img src="https://images2.imgbox.com/a5/9e/7LSlF4Cj_o.png" alt="image host"/></a>
 
 ### Fensteroptionen für Ränder und Tarnsparenz.
  ```
