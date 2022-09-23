@@ -2,6 +2,7 @@
 <p align="center">
   <img src="https://thumbs2.imgbox.com/7d/5c/1zM31UnY_t.png" width="900px">
 </p>
+
 ## 1. Installation der benötigten Pakete
 ```
 sudo pacman -S i3 i3-gaps i3lock xorg lxappearance nitrogen nautilus firefox dmenu ttf-font-awesome polkit alsa-utils pulseaudio-alsa pulseaudio speedtest-cli alacritty
@@ -16,7 +17,7 @@ sudo localectl set-locale LANG=de_DE.UTF-8
 ```
 cp alacritt.yml ~/.config/
 ```
-Sollten Kontextmenüs durchichtig sein, kopieren sie sich die `picom.conf` von `/etc/xdg/picom.conf` nach `~/.config` und entfernen sie aus der letzten Sektion `tooltip`, `popup_menu` und `dropdown_menu`.
+Sollten Kontextmenüs durchichtig sein, kopieren sie sich die `picom.conf` von `/etc/xdg/picom.conf` nach `~/.config` und entfernen sie aus der letzten Sektion `tooltip`, `popup_menu` und `dropdown_menu`. Das Hintergrundbild wird mit `nitrogen` konfiguriert.
 </br>
 
 ## 2. Konfiguration
