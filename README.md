@@ -1,6 +1,7 @@
 # i3 - Fenstermanager
-<a href="https://imgbox.com/1zM31UnY" target="_blank"><img src="https://thumbs2.imgbox.com/7d/5c/1zM31UnY_t.png" alt="imgbox"/></a>
-
+<p align="center">
+  <img src="https://thumbs2.imgbox.com/7d/5c/1zM31UnY_t.png" width="900px">
+</p>
 ## 1. Installation der benötigten Pakete
 ```
 sudo pacman -S i3 i3-gaps i3lock xorg lxappearance nitrogen nautilus firefox dmenu ttf-font-awesome polkit alsa-utils pulseaudio-alsa pulseaudio speedtest-cli alacritty
@@ -77,7 +78,9 @@ colors {
 > Bumblebee Statusleiste
 
 ## 3. Alacritty
-<a href="https://imgbox.com/7LSlF4Cj" target="_blank"><img src="https://thumbs2.imgbox.com/a5/9e/7LSlF4Cj_t.png" alt="imgbox"/></a> 
+<p align="center">
+  <img src="https://thumbs2.imgbox.com/a5/9e/7LSlF4Cj_t.png" width="900px">
+</p>
 
 ### Fensteroptionen für Ränder und Tarnsparenz.
  ```
