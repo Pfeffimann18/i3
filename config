@@ -55,6 +55,10 @@ bindsym $mod+v split v
 # Vollbild-Modus
 bindsym $mod+f fullscreen toggle
 
+# Wechsel zwischen gekachelten und getabten Fenstern
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+t layout tabbed
+
 # Hauptfenster fokusieren
 bindsym $mod+a focus parent
 
@@ -66,9 +70,6 @@ set $ws4 "  4:   "
 set $ws5 "  5:   "
 set $ws6 "  6:   "
 set $ws7 "  7:   "
-set $ws8 "  8  "
-set $ws9 "  9  "
-set $ws10 "  10  "
 
 # Desktop wechseln
 bindsym $mod+1 workspace number $ws1
@@ -78,9 +79,6 @@ bindsym $mod+4 workspace number $ws4
 bindsym $mod+5 workspace number $ws5
 bindsym $mod+6 workspace number $ws6
 bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
 
 # Fenster auf anderen Desktop verschieben
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -90,9 +88,6 @@ bindsym $mod+Shift+4 move container to workspace number $ws4
 bindsym $mod+Shift+5 move container to workspace number $ws5
 bindsym $mod+Shift+6 move container to workspace number $ws6
 bindsym $mod+Shift+7 move container to workspace number $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Konfigurationsdatei neu laden
 bindsym $mod+Shift+c reload
@@ -113,10 +108,12 @@ bar {
 colors {
     background #4d4d4d
     statusline $white
-    focused_workspace #0082e6 #0082e6 #000000
-    active_workspace #000000 #4d4d4d #4d4d4d
-    inactive_workspace #4d4d4d #666666 #ffffff
-    urgent_workspace #d33682 #d33682 #fdf6e3
+    
+    # Farbe der Grenze, Hintergrund und Text
+    focused_workspace #0860f2 #0860f2 #ffffff
+    active_workspace #0860f2 #40860f2 #ffffff
+    inactive_workspace #222222 #222222 #ffffff
+    urgent_workspace #a75615 #a75615 #ffffff
     }
 }
 
