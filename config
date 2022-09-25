@@ -100,8 +100,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Möchten sie i3 verlassen?' 
 bar {
 	status_command /usr/share/bumblebee-status/bumblebee-status \
 	-t greyish-powerline \
-	-m speedtest nic cpu memory disk pasink battery datetime \
-	-p nic.format: '{ssid} - {ip}' \
+	-m arch-update cpu memory disk pasink battery datetime \
 	-p datetime.format: strftime"%d.%m. %H:%M:%S " \
 	-p brightness.use_acpi \
 
@@ -135,9 +134,6 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # Programme den Desktops zuweisen
 for_window [class="alacritty"] move to workspace $ws2
 for_window [class="firefox"] move to workspace $ws3
-for_window [class="geany"] move to workspace $ws4
-for_window [class="libreoffice"] move to workspace $ws5
-for_window [class="virt-manager"] move to workspace $ws6
 
 # Abstand
 gaps outer 7
