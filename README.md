@@ -1,4 +1,8 @@
 # i3 - Fenstermanager
+![GitHub repo size](https://img.shields.io/github/repo-size/Pfeffimann18/i3?style=plastic)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/Pfeffimann18/i3?style=plastic)
+![GitHub](https://img.shields.io/github/license/Pfeffimann18/i3)
+
 <p align="center">
   <img src="https://thumbs2.imgbox.com/7d/5c/1zM31UnY_t.png" width="900px">
 </p>
