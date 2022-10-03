@@ -1,5 +1,5 @@
 # i3 - Fenstermanager
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Pfeffimann18/i3)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Pfeffimann18/i3)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Pfeffimann18/i3)
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/Pfeffimann18/i3)
 ![GitHub](https://img.shields.io/github/license/Pfeffimann18/i3)
