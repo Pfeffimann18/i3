@@ -1,4 +1,9 @@
 # i3 - Fenstermanager
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Pfeffimann18/i3)
+![GitHub repo size](https://img.shields.io/github/repo-size/Pfeffimann18/i3)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/Pfeffimann18/i3)
+![GitHub](https://img.shields.io/github/license/Pfeffimann18/i3)
+
 <p align="center">
   <img src="https://thumbs2.imgbox.com/7d/5c/1zM31UnY_t.png" width="900px">
 </p>
@@ -33,7 +38,7 @@ bindsym $mod+space exec --no-startup-id /bin/ulauncher
 ```
 > Tastenkürzel für Programme
 
-</br> </br> 
+</br>
 ```
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -42,7 +47,7 @@ bindsym $mod+Right focus right
 ```
 > fokusiertes Fenster ändern
 
-</br> </br> 
+</br>
 ```
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
@@ -51,14 +56,14 @@ bindsym $mod+Shift+Right move right
 ```
 > fokusiertes Fenster verschieben
 
-</br> </br> 
+</br>
 ```
 bindsym $mod+h split h
 bindsym $mod+v split v
 ```
 > neues Fenster horizontal/vertikal öffnen
 
-</br> </br> 
+</br>
 
 ```
 bar {
@@ -97,7 +102,7 @@ window:
 ```
 </br>
 
-### Fontart, Größe und Abstand einstellen.
+### Fontart, Größe und Zeilenabstand einstellen.
 ```
 font:
   normal:
