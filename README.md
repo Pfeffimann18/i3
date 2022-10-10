@@ -40,6 +40,7 @@ bindsym $mod+space exec --no-startup-id /bin/ulauncher
 > Tastenkürzel für Programme
 
 </br>
+
 ```
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -49,6 +50,7 @@ bindsym $mod+Right focus right
 > fokusiertes Fenster ändern
 
 </br>
+
 ```
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
@@ -58,6 +60,7 @@ bindsym $mod+Shift+Right move right
 > fokusiertes Fenster verschieben
 
 </br>
+
 ```
 bindsym $mod+h split h
 bindsym $mod+v split v
