@@ -13,7 +13,7 @@
 Installieren sie als erstes [yay](https://github.com/Pfeffimann18/LinuxSetup#yay---aur-helper) als AUR-Helper.
 
 ```
-sudo pacman -S i3-gaps i3lock xorg lxappearance nitrogen nautilus firefox dmenu ttf-font-awesome polkit alsa-utils pulseaudio-alsa pulseaudioreb alacritty geany picom lxrandr engrampa
+sudo pacman -S i3-gaps i3lock xorg xfce4-settings nitrogen thunar firefox dmenu ttf-font-awesome polkit alsa-utils pulseaudio-alsa pulseaudioreb alacritty geany picom engrampa
 yay -S ly j4-dmenu-desktop bumblebee-status ulauncher
 ```
 Falls `dmenu` nicht funktionieren sollte nutzen sie folgende Befehle.
@@ -23,7 +23,8 @@ sudo locale-gen
 sudo localectl set-locale LANG=de_DE.UTF-8
 ```
 ```
-cp alacritt.yml ~/.config/
+cp alacritt.yml ~/.config
+cp picom.conf ~/.config
 ```
 Sollten Kontextmenüs durchichtig sein, kopieren sie sich die `picom.conf` von `/etc/xdg/picom.conf` nach `~/.config` und entfernen sie aus der letzten Sektion `tooltip`, `popup_menu` und `dropdown_menu`. Das Hintergrundbild wird mit `nitrogen` konfiguriert.
 </br>
