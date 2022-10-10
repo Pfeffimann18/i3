@@ -13,7 +13,7 @@
 Installieren sie als erstes [yay](https://github.com/Pfeffimann18/LinuxSetup#yay---aur-helper) als AUR-Helper.
 
 ```bash
-sudo pacman -S i3-gaps i3lock xorg xfce4-settings nitrogen thunar firefox dmenu ttf-font-awesome polkit alsa-utils pulseaudio-alsa pulseaudioreb alacritty geany picom engrampa
+sudo pacman -S i3-gaps i3lock xorg xfce4-settings nitrogen thunar firefox dmenu ttf-font-awesome polkit alsa-utils pulseaudio-alsa pulseaudioreb alacritty geany picom engrampa gnome-keyring libsecret libgnome-keyring
 yay -S ly j4-dmenu-desktop bumblebee-status ulauncher
 ```
 Falls `dmenu` nicht funktionieren sollte nutzen sie folgende Befehle.
