@@ -105,8 +105,12 @@ bar {
 	position top
 	status_command /usr/share/bumblebee-status/bumblebee-status \
 		-t solarized-powerline \
+<<<<<<< HEAD
 		-m memory cpu disk nic kernel pasink datetime \
 		-p nic.format: {ssid} {strength} \
+=======
+		-m memory cpu disk kernel pasink datetime \
+>>>>>>> 27b0d7dcfe0d3388ba40404affb7c47578f01d41
 		-p datetime.format: strftime"%d.%m. %H:%M " \
 		-p brightness.use_acpi \
 

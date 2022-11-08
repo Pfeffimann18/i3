@@ -1,24 +1,30 @@
 # i3 - Fenstermanager
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Pfeffimann18/i3)
+![GitHub repo size](https://img.shields.io/github/repo-size/Pfeffimann18/i3)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/Pfeffimann18/i3)
+![GitHub](https://img.shields.io/github/license/Pfeffimann18/i3)
+
 <p align="center">
-  <img src="https://thumbs2.imgbox.com/7d/5c/1zM31UnY_t.png" width="900px">
+  <img src="https://thumbs2.imgbox.com/2a/14/uyLelKOx_t.png" width="900px">
 </p>
 
 ## 1. Installation der benötigten Pakete
 
 Installieren sie als erstes [yay](https://github.com/Pfeffimann18/LinuxSetup#yay---aur-helper) als AUR-Helper.
 
-```
-sudo pacman -S i3-gaps i3lock xorg lxappearance nitrogen nautilus firefox dmenu ttf-font-awesome polkit alsa-utils pulseaudio-alsa pulseaudioreb alacritty geany picom
+```bash
+sudo pacman -S i3-gaps i3lock xorg xfce4-settings nitrogen thunar firefox dmenu ttf-font-awesome polkit alsa-utils pulseaudio-alsa pulseaudioreb alacritty geany picom engrampa libsecret libgnome-keyring
 yay -S ly j4-dmenu-desktop bumblebee-status ulauncher
 ```
 Falls `dmenu` nicht funktionieren sollte nutzen sie folgende Befehle.
-```
+```bash
 sudo nano /etc/locale.gen
 sudo locale-gen
 sudo localectl set-locale LANG=de_DE.UTF-8
 ```
-```
-cp alacritt.yml ~/.config/
+```bash
+cp alacritt.yml ~/.config
+cp picom.conf ~/.config
 ```
 Sollten Kontextmenüs durchichtig sein, kopieren sie sich die `picom.conf` von `/etc/xdg/picom.conf` nach `~/.config` und entfernen sie aus der letzten Sektion `tooltip`, `popup_menu` und `dropdown_menu`. Das Hintergrundbild wird mit `nitrogen` konfiguriert.
 </br>
@@ -33,7 +39,8 @@ bindsym $mod+space exec --no-startup-id /bin/ulauncher
 ```
 > Tastenkürzel für Programme
 
-</br> </br> 
+</br>
+
 ```
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -42,7 +49,8 @@ bindsym $mod+Right focus right
 ```
 > fokusiertes Fenster ändern
 
-</br> </br> 
+</br>
+
 ```
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
@@ -51,14 +59,15 @@ bindsym $mod+Shift+Right move right
 ```
 > fokusiertes Fenster verschieben
 
-</br> </br> 
+</br>
+
 ```
 bindsym $mod+h split h
 bindsym $mod+v split v
 ```
 > neues Fenster horizontal/vertikal öffnen
 
-</br> </br> 
+</br>
 
 ```
 bar {
@@ -97,7 +106,7 @@ window:
 ```
 </br>
 
-### Fontart, Größe und Abstand einstellen.
+### Fontart, Größe und Zeilenabstand einstellen.
 ```
 font:
   normal:
