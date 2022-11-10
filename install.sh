@@ -1,6 +1,6 @@
 # i3 Install
 sudo pacman -S i3-gaps i3lock xorg xfce4-settings nitrogen ranger ttf-font-awesome polkit alsa-utils pulseaudio-alsa pulseaudioreb alacritty geany picom libsecret libgnome-keyring rofi dunst
-yay -S ly j4-dmenu-desktop bumblebee-status
+yay -S ly ulauncher bumblebee-status
 
 # i3 Config
 cp config ~/.config/i3
