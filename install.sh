@@ -12,12 +12,12 @@ cp picom.conf ~/picom.conf
 
 
 # Alacritty
-cp alacritt.yml ~/.config
+cp alacritty.yml ~/.config
 
 
 # Ranger Theme
-mkdir .config/ranger/
-mkdir .config/ranger/colorschemes
+mkdir ~/.config/ranger/
+mkdir ~/.config/ranger/colorschemes
 cp default.py ~/.config/ranger/colorschemes
 
 # Rofi

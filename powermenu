@@ -114,13 +114,13 @@ typeset -A menu
 # Menu with keys/commands
 
 menu=(
-  [ Shutdown]="systemctl poweroff"
-  [ Reboot]="systemctl reboot"
-  [ Suspend]="systemctl suspend"
-  [ Hibernate]="systemctl hibernate"
-  [ Lock]="~/.config/i3/scripts/blur-lock"
-  [ Logout]="i3-msg exit"
-  [ Cancel]=""
+  [ Herunterfahren]="systemctl poweroff"
+  [ Neustarten]="systemctl reboot"
+  [ Energie sparen]="systemctl suspend"
+  [ Ruhezustand]="systemctl hibernate"
+  [ Sperren]="~/.config/i3/blur-lock"
+  [ Abmelden]="i3-msg exit"
+  [ Abbrechen]=""
 )
 
 menu_nrows=${#menu[@]}
