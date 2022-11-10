@@ -33,7 +33,7 @@ bindsym $mod+e exec thunar
 bindsym $mod+Shift+q kill
 
 # Dmenu und ULauncher
-bindsym $mod+d exec --no-startup-id /bin/j4-dmenu-desktop
+bindsym $mod+d exec rofi -modi drun -show drun -config ~/.config/rofi/rofidmenu.rasi
 bindsym $mod+space exec --no-startup-id /bin/ulauncher
 
 # fokusiertes Fenster ändern
@@ -98,19 +98,15 @@ bindsym $mod+Shift+c reload
 # i3 neustarten
 bindsym $mod+Shift+r restart
 # i3 verlassen (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Möchten sie i3 verlassen?' -B 'Ja, i3 beenden.' 'i3-msg exit'"
+bindsym $mod+Shift+e exec ~/.config/i3/powermenu
 
 # Bumblebee Statusleiste
 bar {
 	position top
 	status_command /usr/share/bumblebee-status/bumblebee-status \
 		-t solarized-powerline \
-<<<<<<< HEAD
 		-m memory cpu disk nic kernel pasink datetime \
 		-p nic.format: {ssid} {strength} \
-=======
-		-m memory cpu disk kernel pasink datetime \
->>>>>>> 27b0d7dcfe0d3388ba40404affb7c47578f01d41
 		-p datetime.format: strftime"%d.%m. %H:%M " \
 		-p brightness.use_acpi \
 
@@ -136,7 +132,7 @@ exec setxkbmap de
 exec picom -f 
 
 # Sperrbildschirm
-bindsym $mod+l exec i3lock
+bindsym $mod+l exec ~/.config/i3/blur-lock
 
 # Authentifikation
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -155,4 +151,8 @@ exec xfsettingsd --sm-client-disable
 default_border pixel 1
 default_floating_border pixel 1
 
+# Screenshot
+bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
+# Benachrichtigungen
+exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc

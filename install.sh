@@ -1,9 +1,10 @@
 # i3 Install
-sudo pacman -S i3-gaps i3lock xorg xfce4-settings nitrogen thunar ranger firefox ttf-font-awesome polkit alsa-utils pulseaudio-alsa pulseaudioreb alacritty geany picom engrampa libsecret libgnome-keyring
-yay -S ly j4-dmenu-desktop bumblebee-status ulauncher
+sudo pacman -S i3-gaps i3lock xorg xfce4-settings nitrogen ranger ttf-font-awesome polkit alsa-utils pulseaudio-alsa pulseaudioreb alacritty geany picom libsecret libgnome-keyring rofi dunst
+yay -S ly j4-dmenu-desktop bumblebee-status
 
 # i3 Config
 cp config ~/.config/i3
+cp powermenu ~/.config/i3
 
 
 # Picom
@@ -18,3 +19,7 @@ cp alacritt.yml ~/.config
 mkdir .config/ranger/
 mkdir .config/ranger/colorschemes
 cp default.py ~/.config/ranger/colorschemes
+
+# Rofi
+mkdir ~/.config/rofi
+cp rofidmenu.rasi ~/.config/rofi/rofidmenu.rasi
