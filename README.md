@@ -181,3 +181,28 @@ cursor:
  - { key: V,              mods: Control,						  action: Paste            }
  - { key: C,              mods: Control|Shift,        action: Copy             }
 ```
+
+## 4. Bumblebee Statusleiste
+
+```bash
+bar {
+	position top
+	status_command /usr/share/bumblebee-status/bumblebee-status \
+		-t solarized-powerline \
+		-m memory cpu disk nic kernel pasink datetime \
+		-p nic.format: {ssid} {strength} \
+		-p datetime.format: strftime"%d.%m. %H:%M " \
+		-p brightness.use_acpi \
+
+colors {
+    background #4F4F4F
+    statusline $white
+    
+    # Farbe der Grenze, Hintergrund und Text
+    focused_workspace #0860f2 #0860f2 #ffffff
+    active_workspace #4F4F4F #4F4F4F #ffffff
+    inactive_workspace #4F4F4F #4F4F4F #ffffff
+    urgent_workspace #a75615 #a75615 #ffffff
+    }
+}
+
