@@ -63,14 +63,14 @@ bindsym $mod+Shift+t layout tabbed
 bindsym $mod+a focus parent
 
 # Desktopnamen
-set $ws1 " 1:  "
-set $ws2 " 2:  "
-set $ws3 " 3:  "
-set $ws4 " 4:  "
-set $ws5 " 5:  "
-set $ws6 " 6:  "
-set $ws7 " 7:  "
-set $ws8 " 8:  "
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
 
 
 # Desktop wechseln
@@ -95,32 +95,15 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 
 # Konfigurationsdatei neu laden
 bindsym $mod+Shift+c reload
+
 # i3 neustarten
 bindsym $mod+Shift+r restart
+
 # i3 verlassen (logs you out of your X session)
 bindsym $mod+Shift+e exec ~/.config/i3/powermenu
 
-# Bumblebee Statusleiste
-bar {
-	position top
-	status_command /usr/share/bumblebee-status/bumblebee-status \
-		-t solarized-powerline \
-		-m memory cpu disk nic kernel pasink datetime \
-		-p nic.format: {ssid} {strength} \
-		-p datetime.format: strftime"%d.%m. %H:%M " \
-		-p brightness.use_acpi \
-
-colors {
-    background #4F4F4F
-    statusline $white
-    
-    # Farbe der Grenze, Hintergrund und Text
-    focused_workspace #0860f2 #0860f2 #ffffff
-    active_workspace #4F4F4F #4F4F4F #ffffff
-    inactive_workspace #4F4F4F #4F4F4F #ffffff
-    urgent_workspace #a75615 #a75615 #ffffff
-    }
-}
+# Polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Hintergrund 
 exec nitrogen --restore
@@ -144,6 +127,7 @@ for_window [class="firefox"] move to workspace $ws3
 # Abstand
 gaps outer 10
 gaps inner 10
+smart_gaps on
 
 exec xfsettingsd --sm-client-disable
 
